@@ -1,0 +1,59 @@
+body {
+  background: #333;
+}
+
+#container {
+  margin: 0 auto;
+  width: 600px;
+  padding: 0;
+}
+
+#piano {
+  text-align: center;
+}
+
+#keyboard {
+  font-size: 0;
+}
+
+.white {
+  height: 100px;
+  width: 25px;
+  background: white;
+  z-index: 1;
+}
+
+.white, .black {
+  display: inline-block;
+  margin: 0;
+  border: 1px solid black;
+  border-left: 0px solid black;
+  position: relative;
+  vertical-align: top;
+  z-index: 1;
+  border-radius: 0 0 2px 2px;
+}
+
+.white:first-child {
+  border-left: 1px solid black;
+}
+
+.black {
+  height: 60px;
+  width: 20px;
+  background: black;
+}
+
+.white:active, .black:active {
+  box-shadow: inset 0px 0px 5px #333;
+}
+
+.black_placeholder {
+  width: 0px;
+  position: relative;
+  vertical-align: top;
+  z-index: 2;
+  height: 50px;
+  left: -10px;
+  display: inline-block;
+}
